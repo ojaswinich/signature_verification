@@ -14,13 +14,13 @@ All the detailed documentation of approach and the accuracy obtained is present 
 The data used for training the CNN model and the logistic model is from SigComp2009 (train and test) and SigComp2011 (Dutch) data set. A subset of the data was used for training and validation was done on the remaining unseen part of the data. 
 
 ## Relevant Code 
-All the code for training the CNN model as well as the subsequent logistic model is present in train.ipynb
+All the code for training the CNN model as well as the subsequent logistic model is present in train.ipynb.
 fn_utils.py contains all the functions that are called for the final framework of one shot learning.
 final_framework.ipynb contains the final framework that is built to test any signature image. It loads the CNN and logistic model weights and creates an empty database. 
 
 Whenever a new signature path and ID is given as input to the final function (final_framework), it saves the embedding of the image against the ID in the database and displays the message 'Added the new ID to the database with embedding.'
 
-Now whenever another signature image is passed with the same ID (any ID already present in the databse), it compiles the embedding of this image using the CNN model weights and takes the difference vector of this embedding and the corresponding embedding of the image with this ID present in the database. 
+Now whenever another signature image is passed with the same ID (any ID already present in the database), it compiles the embedding of this image using the CNN model weights and takes the difference vector of this embedding and the corresponding embedding of the image with this ID present in the database. 
 
 This difference vector is finally passed through the pre-trained logistic model which determines whether the new image is genuine or fraud.
 
