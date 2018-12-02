@@ -20,7 +20,7 @@ final_framework.ipynb contains the final framework that is built to test any sig
 
 Whenever a new signature path and ID is given as input to the final function (final_framework), it saves the embedding of the image against the ID in the database and displays the message 'Added the new ID to the database with embedding.'
 
-Now whenever another signature image is passed with the same ID (any ID already present in the databse), it compiles the embedding of this image using the CNN model weights and takes the difference vector of this embedding and the corresponding embedding of the image with this ID present in the database. 
+Now whenever another signature image is passed with the same ID (any ID already present in the database), it compiles the embedding of this image using the CNN model weights and takes the difference vector of this embedding and the corresponding embedding of the image with this ID present in the database. 
 
 This difference vector is finally passed through the pre-trained logistic model which determines whether the new image is genuine or fraud.
 
