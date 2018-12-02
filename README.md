@@ -30,4 +30,7 @@ If the prediction output is forged class, then the framework will display 'This 
 ## API
 A spyre API can be built on top of this framework which will act as the UI for the signature verification process. 
 
-
+## Authors
+All methodology and code is ideated and authored by:
+1. Ojaswini Chhabra
+2. Souradip Chakraborty
