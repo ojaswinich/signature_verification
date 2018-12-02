@@ -14,7 +14,7 @@ All the detailed documentation of approach and the accuracy obtained is present 
 The data used for training the CNN model and the logistic model is from SigComp2009 (train and test) and SigComp2011 (Dutch) data set. A subset of the data was used for training and validation was done on the remaining unseen part of the data. 
 
 ## Relevant Code 
-All the code for training the CNN model as well as the subsequent logistic model is present in train.ipynb
+All the code for training the CNN model as well as the subsequent logistic model is present in train.ipynb.
 fn_utils.py contains all the functions that are called for the final framework of one shot learning.
 final_framework.ipynb contains the final framework that is built to test any signature image. It loads the CNN and logistic model weights and creates an empty database. 
 
